@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body {
+  background: #3d3d3d;
+  font-family: 'Robot Mono', monospace;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.fas, .far {
+  margin-right: 6px;
+}
+
+.hide {
+  display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+button > .far {
+  transition: 0.2s;
+  color: #333;
+}
+
+button:hover > .far {
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  
+  > h1 {
+    font-size: 26pt;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+
+    > i.fas {
+      color: #00ccff;
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-direction: row;
+
+    > .values {
+      background: #545454;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+      border-radius: 7px;
+      margin-right: 100px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+      > div {
+        margin: 7px 0;
+        width: 100%;
+        
+        > h3 {
+          margin: 0;
+          font-size: 14pt;
+          font-weight: 300;
+          width: 100%;
+        }
+        
+        > input {
+          background: #3d3d3d;
+          color: #f5f5f5;
+          font-size: large;
+          padding: 5px;
+          margin-top: 3px;
+          border: solid 1px #272727;
+          border-radius: 3px;
+          width: 100%;
+        }
+      }
+    }
+
+    > .box {
+      height: 60vh;
+      width: 60vh;
+      padding: 15px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      /* border-radius: 0 10px 50px 150px; */
+
+      > span {
+        resize: none;
+        color: #333;
+        background: #f5f5f5;
+        width: 100%;
+        height: max-content;
+        padding: 4px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        font-size: 9pt;
+      }
+
+      > button {
+        background: none;
+        border: solid 2px #00ccff;
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+        color: #333;
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 12pt;
+        transition: 0.2s;
+        margin-top: 10px;
+
+        &:hover {
+          background: #00ccff;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

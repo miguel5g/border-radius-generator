@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <title>Border Radius Generator</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <h1><i class="fas fa-border-style"></i>Border Radius Generator</h1>
+    <div>
+      <div class="values">
+        <div>
+          <h3>Borda superior esquerda:</h3>
+          <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="b1" maxlength="3" type="text">
+        </div>
+        <div>
+          <h3>Borda superior direita:</h3>
+          <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="b2" maxlength="3" type="text">
+        </div>
+        <div>
+          <h3>Borda inferior esquerda:</h3>
+          <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="b3" maxlength="3" type="text">
+        </div>
+        <div>
+          <h3>Borda inferior direita:</h3>
+          <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="b4" maxlength="3" type="text">
+        </div>
+      </div>
+      <div class="box">
+        <span id="result" class="hide"></span>
+        <button id="copy-result" class="hide"><i class="far fa-copy"></i>Copiar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
